@@ -1,56 +1,38 @@
-# Metadata Hider
+# Property Hider
 
-<div align="center">
+Obsidian plugin for hiding metadata properties.
 
-![Obsidian Downloads](https://img.shields.io/badge/dynamic/json?logo=obsidian&color=%23483699&label=downloads&query=%24%5B%22metadata-hider%22%5D.downloads&url=https%3A%2F%2Fraw.githubusercontent.com%2Fobsidianmd%2Fobsidian-releases%2Fmaster%2Fcommunity-plugin-stats.json) ![GitHub stars](https://img.shields.io/github/stars/Benature/obsidian-metadata-hider?style=flat) ![latest download](https://img.shields.io/github/downloads/Benature/obsidian-metadata-hider/latest/total?style=plastic) 
+## Features
 
-[![Github release](https://img.shields.io/github/manifest-json/v/Benature/obsidian-metadata-hider?color=blue)](https://github.com/Benature/obsidian-metadata-hider/releases/latest) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/Benature/obsidian-metadata-hider?include_prereleases&label=BRAT%20beta)
-
-[Click to install](https://obsidian.md/plugins?id=metadata-hider)
-
-</div>
-
-- Hide metadata property if its value is empty.
-- Keep displaying specific metadata properties even if they are empty.
-- Keep hiding specific metadata properties even if they are not empty in properties table / file properties (side dock) / all properties (side dock).
-- Show all metadata properties when inputting metadata properties, except specific properties that are set to always hidden.
-
-<!-- This plugin will automatically generate a css file in `./obsidian/snippets`, which helps you to hide specific metadata properties. -->
+- Hide a metadata property if its value is empty.
+- Keep specific properties always visible even when empty.
+- Hide specific properties always — in the properties table, file properties panel, or all-properties panel.
+- Show all properties when editing, except those set to always hidden.
 
 ## Usage
 
-Open `Settings` > `Community Plugins` > `Metadata Hider` to set which metadata properties to hide or always show.
+Open **Settings → Community Plugins → Property Hider** and configure which properties to hide or always show.
 
 ## Install
 
-## Install from community plugins
+### Manually
 
-[Click to install](https://obsidian.md/plugins?id=metadata-hider)
+- Download the latest release from [Releases](https://github.com/HoldMark/obsidian-property-hider/releases/latest)
+- Copy `main.js`, `manifest.json`, `styles.css` to `VaultFolder/.obsidian/plugins/property-hider/`
+- Reload plugins in Community Plugins and enable **Property Hider**
 
-### Install by [BRAT Plugin](https://obsidian.md/plugins?id=obsidian42-brat)
+### Via [BRAT](https://obsidian.md/plugins?id=obsidian42-brat)
 
-- First install [BRAT Plugin](https://obsidian.md/plugins?id=obsidian42-brat):
-- In BRAT Plugin, click `Add Beta plugin`
-- Enter https://github.com/Benature/obsidian-metadata-hider
-- Enable `Metadata Hider` in `Community plugins`
+- Install the BRAT plugin
+- In BRAT settings, click **Add Beta plugin**
+- Enter `https://github.com/HoldMark/obsidian-property-hider`
+- Enable **Property Hider** in Community Plugins
 
-### Manually install
+## Build
 
-- Download latest version in [Releases](https://github.com/Benature/obsidian-metadata-hider/releases/latest)
-- Copy over `main.js`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/metadata-hider/`
-- Reload plugins in `Community plugins` and enable `Metadata Hider`
-
-## How to build
-
-- `git clone https://github.com/Benature/obsidian-metadata-hider` clone this repo.
-- `npm i`  install dependencies
-- `npm run dev` to start compilation in watch mode.
-- `npm run build`  to build production.
-
-## Support
-
-If you find this plugin useful and would like to support its development, you can sponsor me via [Buy Me a Coffee ☕️](https://www.buymeacoffee.com/benature), WeChat, Alipay or [AiFaDian](https://afdian.net/a/Benature-K). Any amount is welcome, thank you!
-
-<p align="center">
-<img src="https://s2.loli.net/2024/04/01/VtX3vYLobdF6MBc.png" width="500px">
-</p>
+```bash
+git clone https://github.com/HoldMark/obsidian-property-hider
+npm i
+npm run dev   # watch mode
+npm run build # production build
+```
