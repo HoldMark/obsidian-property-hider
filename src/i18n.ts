@@ -1,3 +1,5 @@
+// Локализация строк интерфейса. Содержит переводы EN и RU.
+// Locals.get() возвращает нужный объект строк по языку Obsidian (localStorage.language).
 const EN = {
 	command: {
 	},

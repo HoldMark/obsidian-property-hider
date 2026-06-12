@@ -1,3 +1,8 @@
+/*
+ * Статические CSS-стили плагина.
+ * Скрывает .tree-item.mh-hide в панели «All properties» — класс навешивается через DOM-манипуляции в main.ts.
+ * Динамические стили (таблица свойств) инжектируются отдельно через <style id="css-metadata-hider">.
+ */
 .workspace-leaf-content[data-type="all-properties"]
 	.view-content
 	.tree-item.mh-hide {

@@ -1,3 +1,5 @@
+# GitHub Actions: автоматическая сборка и публикация релиза при пуше git-тега.
+# Собирает main.js, упаковывает с manifest.json и styles.css, создаёт GitHub Release с assets.
 name: Release plugin
 
 on:

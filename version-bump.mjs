@@ -1,3 +1,5 @@
+// Скрипт обновления версии (npm run version).
+// Читает версию из package.json, записывает в manifest.json и versions.json. Запускается перед git-тегированием.
 import { readFileSync, writeFileSync } from "fs";
 
 const targetVersion = process.env.npm_package_version;

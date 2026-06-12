@@ -1,3 +1,6 @@
+// Единственный файл с логикой плагина. Содержит класс плагина, настройки (MetadataHiderSettings),
+// генерацию CSS (genAllCSS, updateCSS), отслеживание фокуса на контейнере метаданных,
+// DOM-манипуляции для панели «All properties», миграцию старых настроек и весь UI настроек.
 import { App, Notice, Plugin, PluginSettingTab, Setting, debounce, ButtonComponent, ToggleComponent } from 'obsidian';
 import { Locals } from 'src/i18n';
 import { string2list } from 'src/util'

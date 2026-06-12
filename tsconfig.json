@@ -1,3 +1,5 @@
+// Конфигурация TypeScript-компилятора. Строгие проверки (noImplicitAny, strictNullChecks), target ES6, inline sourcemaps.
+// Используется при tsc -noEmit (проверка типов в npm run build) и IDE.
 {
   "compilerOptions": {
     "baseUrl": ".",

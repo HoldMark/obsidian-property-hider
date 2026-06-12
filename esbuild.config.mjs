@@ -1,3 +1,6 @@
+// Конфигурация сборщика esbuild.
+// dev (npm run dev): watch-режим с inline-sourcemaps. build (npm run build): продакшн-бандл без sourcemap.
+// Точка входа — main.ts, выход — main.js. Obsidian и Node built-ins помечены как external.
 import esbuild from "esbuild";
 import process from "process";
 import builtins from "builtin-modules";

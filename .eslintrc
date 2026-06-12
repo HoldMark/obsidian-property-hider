@@ -1,3 +1,5 @@
+// Конфигурация ESLint с плагином @typescript-eslint.
+// Запрет неиспользуемых переменных, разрешение @ts-comment и пустых функций.
 {
     "root": true,
     "parser": "@typescript-eslint/parser",
